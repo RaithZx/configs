@@ -10,7 +10,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -48,13 +48,13 @@ let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeIgnore = ['^node_modules$']
 
 " vim-prettier
-"let g:prettier#quickfix_enabled = 0
-"let g:prettier#quickfix_auto_focus = 0
+let g:prettier#quickfix_enabled = 0
+let g:prettier#quickfix_auto_focus = 0
 " prettier command for coc
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " run prettier on save
-"let g:prettier#autoformat = 0
-"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 
 
 " ctrlp

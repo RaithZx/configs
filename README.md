@@ -8,5 +8,5 @@ But the truth is **I always forget that I have this repo 🙃**
 Heres a list of config files included in this repo
 Program Name| Filename
 |---------|--|
-|Vim|init.vim
+|Vim|`init.vim`
 
